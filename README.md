@@ -20,7 +20,7 @@ A step by step series of examples that tell you how to get a development env run
 Clone the repository.
 
 ```
-git clone https://github.com/jsford/rplidar_cpp.git
+git clone https://github.com/huskyroboticsteam/rplidar.git
 ```
 
 Use cmake to build and install.
@@ -74,16 +74,13 @@ In your code, include the RPLidar library as follows:
 #include <RPLidar/rplidar.h>
 ```
 
-See [demo.cpp](https://github.com/jsford/rplidar_cpp/blob/master/demo/demo.cpp) for an example usage.
-Check out [RPLidar/rplidar.h](https://github.com/jsford/rplidar_cpp/blob/master/include/RPLidar/rplidar.h) to view the complete interface.
-
-## Built With
-
-* [CMake](https://cmake.org/)
+See [demo.cpp](https://github.com/huskyroboticsteam/rplidar/blob/master/demo/demo.cpp) for an example usage.
+Check out [RPLidar/rplidar.h](https://github.com/huskyroboticsteam/rplidar/blob/master/include/RPLidar/rplidar.h) to view the complete interface.
 
 ## Authors
 
 * **Jordan Ford** - [jrdnfrd.com](http://jrdnfrd.com)
+* **Husky Robotics Team** <uwrobots@uw.edu> - CMake config and SDK updates
 
 ## License
 
