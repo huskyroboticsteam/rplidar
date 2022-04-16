@@ -9,7 +9,9 @@ int main(int argc, char *argv[]) {
   std::cout << "--------------------------" << std::endl;
   std::cout << "Jordan Ford, 2018    " << std::endl;
 
-  RPLidar rp("/dev/rplidar");
+  std::string lidar_path = (argc > 1) ? argv[1] : "/dev/ttyUSB0";
+
+  RPLidar rp(lidar_path);
   rp.setBaudrate(115200);
   rp.setMaxDistance(16.0);
 
