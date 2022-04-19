@@ -40,7 +40,7 @@ class RPLidar {
 private:
   int scan_seq = 0;
   std::string serial_port = "/dev/ttyUSB0";
-  int serial_baudrate = 115200;
+  int serial_baudrate;
   std::string scan_mode = "";
   std::string frame_id = "laser_frame";
   double max_distance = 8.0;
@@ -48,7 +48,7 @@ private:
   rp::standalone::rplidar::RPlidarDriver *drv = NULL;
 
 public:
-  RPLidar(const std::string &serial_port);
+  RPLidar(const std::string &serial_port, uint32_t baudrate=115200);
   ~RPLidar();
 
   RPLidar &setBaudrate(int baudrate);

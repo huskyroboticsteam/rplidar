@@ -38,7 +38,7 @@ std::ostream &operator<<(std::ostream &os, const RPLidarScan &scan) {
   return os;
 }
 
-RPLidar::RPLidar(const std::string &serial_port) {
+RPLidar::RPLidar(const std::string &serial_port, uint32_t baudrate) : serial_baudrate(baudrate){
   drv = RPlidarDriver::CreateDriver(
       rp::standalone::rplidar::DRIVER_TYPE_SERIALPORT);
 

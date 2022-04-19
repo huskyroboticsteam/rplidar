@@ -10,9 +10,9 @@ int main(int argc, char *argv[]) {
   std::cout << "Jordan Ford, 2018    " << std::endl;
 
   std::string lidar_path = (argc > 1) ? argv[1] : "/dev/ttyUSB0";
+  uint32_t baudrate = (argc > 2) ? atoi(argv[2]) : 115200;
 
-  RPLidar rp(lidar_path);
-  rp.setBaudrate(115200);
+  RPLidar rp(lidar_path, baudrate);
   rp.setMaxDistance(16.0);
 
   using namespace std::chrono;
