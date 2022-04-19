@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(RPLidar
   LANGUAGES C CXX
-  VERSION 1.10.0.2)
+  VERSION 1.10.1.3)
 
 # Build the RPLidar library.
 find_package(Threads REQUIRED)
